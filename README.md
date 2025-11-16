@@ -1,123 +1,124 @@
-📊 BrightTV Analytics Project
+📺 BrightTV Viewership Analysis Dashboard
+📘 Project Purpose
 
-This project explores user behaviour and content consumption trends on BrightTV using analytical tools and visualization platforms. Two datasets were used to understand user profiles, viewership patterns, and factors that influence overall engagement.
+This project analyzes BrightTV’s user activity, content consumption patterns, and overall platform engagement.
+The goal is to understand who the users are, when they are most active, what influences their viewing habits, and how BrightTV can increase both usage and user growth.
 
-📁 Dataset Description
-1. BrightTV_userProfile
+📊 Datasets Used
+Dataset Name 1: BrightTV_userProfile
 
-Contains demographic and basic user information.
+Data Fields:
 
-Column	Description
-UserID	Unique identifier for each user
-Name	First name of the user
-Surname	Last name of the user
-Email	User email address
-Gender	Gender of the user
-Race	Race category
-Age	Age in years
-Province	Province of residence
-Social Media Handle	User’s social media profile name
+UserID
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name
 
-2. BrightTV_viewership
+Surname
 
-Tracks user viewing activity across channels and dates.
+Email
 
-Column	Description
-UserID	Linked to User Profile table
-Channel2	Channel watched
-RecordDate2	Date and time of viewing
-Duration2	Watch duration (in minutes)
+Gender
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Race
 
-🛠 Tools & Technologies Used
+Age
 
-Snowflake – Data cleaning, transformation, and SQL analysis
+Province
 
-Power BI – Data modeling, interactive dashboard creation, insights visualization
+Social Media Handle
 
-Miro – Planning and flow design
+Dataset Name 2: BrightTV_viewership
 
-PowerPoint – Presentation building and storytelling
+Data Fields:
 
----
+UserID
 
-🔍 Key Findings
-1. User & Channel Insights
+Channel2
 
-Total users analyzed across the period.
+RecordDate2
 
-21 total channels available in the dataset (SQL result).
+Duration2
 
-Viewing time varies significantly by day and month.
+🛠️ Tools & Technologies
 
-2. Busiest Days
+Snowflake: SQL-based data cleaning, transformation, and analytics
 
-Friday is the highest consumption day, followed by
-Saturday → Wednesday → Sunday.
+Power BI: Dashboard creation, DAX calculations, and insight visualization
 
-3. Monthly Trends
+Miro: Planning, mapping, and analysis workflow design
 
-March has the highest usage, followed by February.
+PowerPoint: Final presentation of findings and recommendations
 
-January shows moderate activity.
+🎯 Objectives
 
-April has the lowest usage, with only 5 users active.
+Analyze user and usage trends across channels and timestamps
 
-4. Usage Behaviour
+Identify factors influencing content consumption
 
-Peak hours and peak days indicate when users engage most.
+Determine peak and low-activity days and months
 
-Low-consumption periods show opportunities for campaigns and content releases.
+Recommend content strategies for low-consumption periods
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Suggest initiatives to help grow BrightTV’s user base
 
-🧭 Steps Followed
+🔍 Steps Followed
 
-Data Import into Snowflake.
+Loaded datasets into Snowflake
 
-Cleaning & Transformation
+Cleaned and prepared data (date formatting, null handling, field extraction)
 
-Standardized date fields
+Engineered new fields (day name, hour, weekday/weekend, month)
 
-Handled null channel values
+Ran SQL queries to calculate averages, distinct channel counts, user activity, and trends
 
-Created calculated fields (day, weekday, month).
+Imported cleaned tables into Power BI
 
-SQL Analysis
+Built:
 
-Average watch time
+KPIs
 
-Total channels
+Line/Bar charts
 
-Daily/Monthly consumption metrics
+Monthly trend visuals
 
-High-watch vs low-watch segmentation
+Daily consumption visuals
 
-Data Export to Power BI
+Designed supporting diagrams in Miro
 
-Created core measures (DAX)
+Presented insights and recommendations in PowerPoint
 
-Built date hierarchy, calendar table, relationships
+💡 Key Findings
 
-Designed key visuals:
+Busiest Day: Friday
 
-Line charts, bar charts, cards, KPI indicators
+Next Busiest: Saturday → Wednesday → Sunday
 
-Dashboard Creation
+Highest Usage Month: March
 
-User trends
+April had the lowest activity, with only 5 users
 
-Consumption patterns
+Clear weekend spikes, showing higher leisure-time viewership
 
-Top/low performing periods
+Consumption varies significantly based on day, month, and content type
 
-Presentation Preparation in PowerPoint.
+The platform has strong potential for growth through targeted content and engagement campaigns
 
-📌 Conclusion
+🚀 Conclusion
 
-The analysis shows that BrightTV’s content consumption is strongest on Fridays and weekends, with March being the peak month.
-Low-engagement periods such as April highlight opportunities for new content promotions, feature rollouts, or targeted marketing campaigns.
-With continued data monitoring and user-focused strategies, BrightTV can grow both user engagement and overall platform usage.
+The analysis shows strong viewing patterns on Fridays and weekends, with March as the best-performing month.
+To improve growth and engagement, BrightTV should focus on:
+
+Boosting content offerings during low-activity periods like April
+
+Increasing consistent weekly programming
+
+Running targeted user engagement campaigns
+
+Expanding content formats based on high-performing channels
+
+These insights can help BrightTV optimize content strategy, enhance user satisfaction, and grow its overall user base.
+
+✨ Author
+
+Roy Maluks — Aspiring Data Analyst passionate about transforming raw data into meaningful insights.
+Currently working with SQL, Snowflake, Power BI, and data visualization projects.
