@@ -1,4 +1,4 @@
-# 📺 BrightTV Viewership Analysis Dashboard
+# 📺 BrightTV Viewership Analysis
 
 ## 📘 Project Purpose
 This project analyzes BrightTV’s user activity, content consumption patterns, and overall engagement.  
