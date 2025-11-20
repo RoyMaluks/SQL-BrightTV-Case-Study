@@ -1,89 +1,101 @@
-# 🚗 Bright Motors Car Sales Analysis (BRIGHTLEARN)
+# 📘 Project Purpose
+
+This project analyzes BrightTV’s user activity, content consumption patterns, and overall engagement.  
+The goal is to understand user behaviour, identify peak usage periods, and provide insights to help improve content strategy and grow BrightTV’s user base.
 
 ---
 
-## 📘 Project Purpose
+## 📊 Datasets Used
 
-This project analyzes Bright Motors’ historical car sales data to uncover revenue patterns, customer purchasing behaviour, and inventory performance.  
-The goal is to help the newly appointed Head of Sales understand business performance and make data-driven decisions to improve profitability, optimize stock, and strengthen dealership operations.
-
----
-
-## 📊 Dataset Used
-
-**Dataset:** `Bright_Car_Sales`  
+### Dataset 1: `BrightTV_userProfile`
 
 **Fields:**
 
-- year  
-- brand  
-- model  
-- trim  
-- body  
-- transmission  
-- vin_id  
-- state  
-- condition  
-- odometer  
-- color  
-- interior  
-- seller  
-- market_value  
-- selling_price  
-- sale_date  
+- UserID  
+- Name  
+- Surname  
+- Email  
+- Gender  
+- Race  
+- Age  
+- Province  
+- Social Media Handle  
+
+### Dataset 2: `BrightTV_viewership`
+
+**Fields:**
+
+- UserID  
+- Channel2  
+- RecordDate2  
+- Duration2  
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- **Snowflake** – ETL, data cleaning, SQL transformations  
-- **Power BI** – Dashboard design, DAX measures, KPI reports  
-- **Miro** – Planning, architecture mapping, workflow design  
-- **PowerPoint** – Final business presentation  
+- **Snowflake** – SQL data cleaning, transformation, modeling  
+- **Power BI** – Dashboard creation, DAX measures, visuals  
+- **Miro** – Workflow mapping and planning  
+- **PowerPoint** – Final presentation design  
 
 ---
 
 ## 🎯 Objectives
 
-- Identify top revenue-generating car brands and models  
-- Analyze monthly and weekly sales performance  
-- Understand the relationship between price, odometer, and car age  
-- Compare market value vs. selling price  
-- Categorize vehicles into High, Medium, and Low Margin  
-- Provide strategic recommendations to improve profitability  
+- Analyze user and usage trends across BrightTV  
+- Identify factors influencing content consumption  
+- Understand peak vs. low consumption days and months  
+- Recommend content to improve low-consumption days  
+- Suggest initiatives to help grow BrightTV’s user base  
 
 ---
 
 ## 🔍 Steps Followed
 
-1. Converted Excel data into CSV format  
-2. Loaded dataset into Snowflake  
-3. Performed data cleaning:  
-   - Fixed date formats  
-   - Handled null values in brand/model/trim  
-   - Standardized numeric fields (selling price, market value)  
-4. Engineered additional fields:  
-   - Month name  
-   - Day of week  
-   - Margin category  
-   - Price difference  
-5. Ran analytical SQL queries:  
-   - Revenue by brand/model  
-   - Monthly and weekday trend analysis  
-   - Transmission performance  
-6. Exported cleaned dataset to Power BI  
-7. Built visualizations and DAX measures:  
+1. Imported datasets into Snowflake  
+2. Cleaned and standardized fields (dates, nulls, durations)  
+3. Engineered additional features:  
+   - Day name  
+   - Hour of day  
+   - Weekday/weekend  
+   - Monthly classification  
+4. Ran analytical SQL queries (average duration, daily trends, channel counts, etc.)  
+5. Loaded the transformed dataset into Power BI  
+6. Created DAX measures and built dashboard visuals:  
    - KPIs  
-   - Revenue trends  
-   - Margin breakdowns  
-   - Brand comparisons  
-8. Designed a final presentation summarizing insights and recommendations  
+   - Line charts  
+   - Bar charts  
+   - Monthly trend visuals  
+7. Designed process flow and planning documents in Miro  
+8. Presented findings in PowerPoint  
 
 ---
 
 ## 💡 Key Findings
 
-- Total revenue exceeds R8 billion across the dataset  
-- Tuesday–Thursday drive the highest revenue  
-- February is the strongest month, while April and July have zero or very low revenue  
-- Vehicle sales are dominated by Low Margin units (4
+- Friday is the busiest day, followed by Saturday, Wednesday, and Sunday  
+- March has the highest usage among all months  
+- April shows the lowest user activity, with only 5 users recorded  
+- Viewing heavily increases on weekends, indicating leisure-time engagement  
+- Consumption is influenced by day of week, month, user availability, and content type  
+
+---
+
+## 🚀 Conclusion
+
+The analysis highlights strong engagement on weekends and in the month of March.  
+To boost overall platform performance, BrightTV should consider:
+
+- Increasing content drops and marketing campaigns during low-activity months (e.g., April)  
+- Strengthening weekly programming to keep engagement consistent  
+- Creating personalized user-targeted engagement campaigns  
+- Expanding high-performing content categories  
+
+These insights provide a foundation for improving user retention, growing the user base, and optimizing BrightTV’s content strategy.
+
+---
+
+## ✨ Author
+
+**Roy Maluks** — Aspiring Data Analyst focused on SQL, Snowflake, Power BI, and storytelling through data.
